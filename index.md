@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Welcome to my portfolio
 ---
 
-# Index Page
+{% include section-about.html %}
