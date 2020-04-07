@@ -1,0 +1,21 @@
+
+# Website information
+title: "</MDesign>"
+description: >-
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+destination: ../mdesign-build
+
+#plugins:
+
+# SASS Settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude:
+  - LICENCE
+  - README.md

@@ -1,0 +1,44 @@
+@mixin breakpoints($device) {
+
+  // Smartphone breakpoint
+  @if $device == smartphone-only {
+    @media screen and (max-width: 599px){
+      @content;
+    }
+  }
+
+  // Tablet and up breakpoint (600 pixels and above)
+  @if $device == tablet-portrait-up {
+    @media screen and (min-width: 600px){
+      @content;
+    }
+  }
+
+  // Tablet only breakpoint (600 pixels to 899px)
+  @if $device == tablet-portrait-only {
+    @media screen and (min-width: 600px) and (max-width: 899px){
+      @content;
+    }
+  }
+
+  // Tablet landscape and up breakpoint (900 pixels and above)
+  @if $device == tablet-landscape-up {
+    @media screen and (min-width: 900px){
+      @content;
+    }
+  }
+
+  // Tablet landscape only breakpoint (900 pixels to 1199px)
+  @if $device == tablet-landscape-only {
+    @media screen and (min-width: 900px) and (max-width: 1199px){
+      @content;
+    }
+  }
+
+  // Desktop and up breakpoint (1200 pixels and above)
+  @if $device == desktop-up {
+    @media screen and (min-width: 1200px){
+      @content;
+    }
+  }
+}
