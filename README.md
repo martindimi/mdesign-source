@@ -16,4 +16,5 @@ See LICENCE file for more.
 **This project makes use of:**
 
 * [DEVICON](https://konpa.github.io/devicon/)
-* [Social Media Icons](https://github.com/martindimi/social-media-icons) 
+* [Social Media Icons](https://github.com/martindimi/social-media-icons)
+* [Fira Sans Compressed](https://github.com/bBoxType/FiraSans) font family.

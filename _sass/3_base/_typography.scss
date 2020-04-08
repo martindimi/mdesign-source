@@ -1,3 +1,20 @@
 // ==================
 // === Typography ===
 // ==================
+
+// --- Custom Fonts ---
+
+@font-face {
+  font-family: "Fira Sans Compressed Light";
+  src: url('/assets/fonts/FiraSansCompressed-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Sans Compressed Regular";
+  src: url('/assets/fonts/FiraSansCompressed-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
