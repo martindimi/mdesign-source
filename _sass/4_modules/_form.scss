@@ -1,0 +1,35 @@
+// ============
+// === Form ===
+// ============
+
+form {
+  width: 100%;
+}
+
+input, textarea, button {
+  font-family: "Fira Sans Compressed";
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 1rem;
+}
+
+input, textarea {
+  font-size: 1.3em;
+  color: $color-sec;
+  background-color: $color-dark;
+  border: 2px solid $color-light-gray;
+  padding: 8px 0 8px 16px;
+
+  // --- Tablet portrait and up ---
+  @include breakpoints(tablet-portrait-up){
+    padding: 10px 0 10px 32px;
+  }
+}
+
+textarea {
+    width: 100%;
+    min-height: 250px;
+    // Disabling the horizontal resizing so the layout can't be messed up
+    resize: vertical;
+  }

@@ -18,3 +18,76 @@
   font-style: normal;
 }
 
+// --- Global Typography Styles ---
+
+// Root font-size
+:root, body {
+  font-size: 20px;
+  font-family: "Fira Sans Compressed Regular";
+  color: $color-sec;
+  text-align: center;
+  
+  // --- Tablet and up ---
+  @include breakpoints(tablet-portrait-up){
+    font-size: 24px;
+  }
+
+  // --- Desktop and up ---
+  @include breakpoints(desktop-up){
+    font-size: 26px;
+  }
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 2.1rem;
+  color: #ffffff;
+  margin-bottom: 0.3em;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: $color-prim;
+  margin-bottom: 0.3em;
+}
+
+h3, h4, h5, h6 {
+  font-size: 1.2rem;
+  color: $color-light-gray;
+  margin-bottom: 0.3em;
+}
+
+// Misc text elements
+p {
+  margin-bottom: 1.4em;
+}
+
+p, a, li, b, i, a {
+  line-height: 1.3em;
+}
+
+b {
+  font-weight: bold;
+}
+
+// Anchors
+a {
+text-decoration: none;
+color: $color-prim;
+font-size: 1rem;
+
+  &:hover, &:active, &:focus {
+    color: $color-prim-lighter;
+    text-decoration: underline;
+  }
+}
+
+// Utility classes
+.section-title {
+  text-align: center;
+}

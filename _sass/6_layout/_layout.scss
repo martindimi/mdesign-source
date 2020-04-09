@@ -1,0 +1,17 @@
+// ==============
+// === Layout ===
+// ==============
+
+body {
+  background-color: $color-dark;
+}
+
+.section {
+  
+  // Removing the margin from the last element of .section
+  & > *:last-child, 
+      input:last-child, 
+      textarea:last-child {
+    margin: 0;
+  }
+}
