@@ -1,0 +1,24 @@
+// ===================
+// === Page Footer ===
+// ===================
+
+.page-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+// Wrapper for set of links
+.footer-links {
+  margin: 0 16px; // Adding margin between the links wrappers
+  list-style: none;
+  text-align: left;
+
+  // --- Tablet portrait and up ---
+  @include breakpoints(tablet-portrait-up) {
+    margin: 0 32px;
+  }
+
+  &:first-child {
+    margin: 0; // Removing the margin from the first item so it doesn't stack up with the .section padding
+  }
+}

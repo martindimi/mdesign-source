@@ -1,0 +1,64 @@
+// ==========================
+// === Website Navigation ===
+// ==========================
+
+.page-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // --- Tablet portrait and up ---
+  @include breakpoints(tablet-portrait-up) {
+    flex-direction: row;
+    width: 600px;
+
+    .button {display: none; } // Hiding the "Hire me" button at 600px and above
+  }
+
+  // --- Tablet lanscape and up ---
+  @include breakpoints(tablet-landscape-up) {
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  // --- Desktop and up ---
+  @include breakpoints(desktop-up) {
+    height: 90px;
+  }
+}
+
+.nav-item, .nav-item:visited {
+  color: $color-sec;
+  font-size: 1.6em;
+  display: block;
+  line-height: 1.4em;
+  width: 100%;
+  text-align: center;
+
+  // --- Tablet landscape and up ---
+  @include breakpoints(tablet-landscape-up) {
+    //height: 100%;
+    width: auto;
+    padding: 0 16px;
+    line-height: 75px; 
+    border-top: 5px solid $color-dark; // "placeholder" border for the hover and focus states border effect
+  }
+
+  // --- Desktop and up ---
+  @include breakpoints(desktop-up) {
+    line-height: 85px;
+  }
+}
+
+.nav-item:hover, .nav-item:focus {
+  color: $color-prim-lighter;
+  text-decoration: none; // Remove underline on hover and focus state
+
+  // --- Tablet landscape and up ---
+  @include breakpoints(tablet-landscape-up) {
+    border-top: 5px solid $color-prim-lighter; // Hover and focus states border effect
+  }
+}
