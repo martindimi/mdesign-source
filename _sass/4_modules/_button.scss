@@ -1,0 +1,31 @@
+// ===============
+// === Buttons ===
+// ===============
+
+.button {
+  font-size: 1.6em;
+  padding: 0.2em 1.6em;
+  text-align: center;
+  width: 100%;
+  background: $color-prim;
+  color: $color-sec;
+  cursor: pointer;
+  
+  border: none; // Remove border from input buttons
+
+  &:hover {
+    text-decoration: none; // Remove underline from anchor buttons on hover
+    background: $color-sec;
+    color: $color-prim;
+  }
+
+  // --- Tablet portrait and up ---
+  @include breakpoints(tablet-portrait-up){
+    max-width: 340px;
+  }
+
+  // --- Tablet landscape and up ---
+  @include breakpoints(tablet-landscape-up){
+    max-width: 260px;
+  }
+}
