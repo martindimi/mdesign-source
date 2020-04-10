@@ -1,0 +1,121 @@
+// =========================
+// === About Me Section ====
+// =========================
+
+// Bio
+.bio {
+
+  // Tablet Portrat up
+  @include breakpoints(tablet-portrait-up) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  // --- Desktop up ---
+  @include breakpoints(desktop-up) {
+    max-width: 900px;
+    margin: 0 auto 32px auto;
+  }
+
+  // Profile image
+  &-image {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    border-radius: 2px;
+    height: auto;
+
+    // --- Tablet portrait and up ---
+    @include breakpoints(tablet-portrait-up) {
+      width: 30%;
+      min-width: 200px;
+      margin-bottom: 0;
+      margin-right: 32px;
+    }
+  }
+
+  // Bio text
+  &-text {
+    text-align: center;
+
+    // --- Tablet portrait and up ---
+    @include breakpoints(tablet-portrait-up) {
+      width: 70%;
+
+      p {
+        margin-bottom: 0; // Remove margin declared in typography
+      }
+    }
+  }
+}
+
+// Skils and tools
+.skills-tools {
+
+  // --- Tablet portrait and up ---
+  @include breakpoints(tablet-portrait-up) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+
+  // --- Desktop up ---
+  @include breakpoints(desktop-up) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  // Skills and tools category container
+  &-category{
+    padding: 3px;
+    border-radius: 5px;
+    background-color: lighten( $color-dark, $amount: 5);
+
+    // --- Smartphone only --- 
+    @include breakpoints(smartphone-only){
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    // Category title
+    &-title {
+      margin-bottom: 8px;
+    }
+  }
+
+  // Icons container
+  &-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  // Icon
+  &-icon {
+    margin-left: 8px;
+    width: 50px;
+    height: 50px;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  // Class used to span an element across whole grid row
+  .span-whole-row {
+    grid-column: 1/3 ;
+
+    // --- Desktop up ---
+    @include breakpoints(desktop-up) {
+      grid-column: 1/4 ;
+    }
+  }
+}
+
+
+
