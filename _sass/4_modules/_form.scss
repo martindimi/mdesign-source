@@ -2,16 +2,12 @@
 // === Form ===
 // ============
 
-form {
-  width: 100%;
-}
-
 input, textarea, button {
   font-family: "Fira Sans Compressed";
   display: block;
   width: 100%;
   border-radius: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 input, textarea {
@@ -28,8 +24,8 @@ input, textarea {
 }
 
 textarea {
-    width: 100%;
-    min-height: 250px;
-    // Disabling the horizontal resizing so the layout can't be messed up
-    resize: vertical;
+  min-height: 200px;
+  height: 220px;
+  // Disabling the horizontal resizing so the layout can't be messed up
+  resize: vertical;
   }
