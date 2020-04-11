@@ -2,6 +2,30 @@
 // === About Me Section ====
 // =========================
 
+// About me section
+.about-section {
+  
+  // Tablet Portrat up
+  @include breakpoints(tablet-portrait-up) {
+    background-image: url(/assets/img/about-me-bg--tablet-portrait.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  // Tablet landscape up
+  @include breakpoints(tablet-landscape-up) {
+    background-image: url(/assets/img/about-me-bg--tablet-landscape.jpg);
+  }
+
+  // --- Desktop up ---
+  @include breakpoints(desktop-up) {
+    background-image: url(/assets/img/about-me-bg--desktop.jpg);
+  }
+}
+
 // Bio
 .bio {
 
