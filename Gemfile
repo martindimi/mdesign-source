@@ -9,9 +9,10 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.0.0"
 # If you have any plugins, put them here!
-#group :jekyll_plugins do
+group :jekyll_plugins do
+  gem 'jekyll-sitemap'
 #  gem "jekyll-feed", "~> 0.12"
-#end
+end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
