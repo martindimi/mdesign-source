@@ -6,26 +6,23 @@
     <div class="contact-methods">
       
       <h1 class="section-title">Let's talk</h1>
-      <p class="contact-email">martin.dimi.dev@yandex.com</p>
+      <p class="contact-email">{{ site.email }}</p>
 
       <div class="online-services">
-        <a class="online-services-item" title="GitHub" href="">
+        <a class="online-services-item" title="GitHub" href="{{ site.social.github }}">
           <img src="/assets/img/online-services/github-icon.svg" alt="GitHub">
         </a>
-        <a class="online-services-item" title="Fiverr" href="">
+        <a class="online-services-item" title="Fiverr" href="{{ site.social.fiverr }}">
           <img src="/assets/img/online-services/fiverr-icon.svg" alt="Fiverr">
         </a>
-        <a class="online-services-item" title="LinkedIn" href="">
+        <a class="online-services-item" title="LinkedIn" href="{{ site.social.linkedin }}">
           <img src="/assets/img/online-services/linkedin-icon.svg" alt="LinkedIn">
-        </a>
-        <a class="online-services-item" title="Deviantart" href="">
-          <img src="/assets/img/online-services/deviantart-icon.svg" alt="DeviantArt">
         </a>
       </div>
 
     </div>
 
-    <form class="contact-form" action="" method="post">
+    <form class="contact-form" data-netlify="true" method="post">
       <input type="text" name="name" placeholder="What's your name?">
       <input type="email" name="email" placeholder="Your e-mail?">
       <textarea name="message" rows="8" placeholder="Tell me about your project..."></textarea>

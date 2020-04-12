@@ -1,20 +1,17 @@
-
-# Website information
+# === Website information ===
 title: "</MDesign>"
-description: >-
+description: "Personal website of Martin Dimitrov." 
+url: "https://martindimitrov.dev"
+email: "martin.dimi.dev@yandex.com"
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# === Social ===
+social:
+  github: "https://github.com/martindimi"
+  linkedin: "https://www.linkedin.com/in/martin-dimitrov-20ba621a6/"
+  fiverr: "https://www.fiverr.com/martindimi27"
 
-# Build settings
-destination: ../mdesign-build
-
-#plugins:
-
-# SASS Settings
-sass:
-  sass_dir: _sass
-  style: compressed
+# === Jekyll Configuration ==
+markdown: kramdown
 
 exclude:
   - LICENCE
@@ -22,3 +19,17 @@ exclude:
 
 include:
   - "_pages"
+  - ".htaccess"
+
+# === Build settings ===
+destination: ../mdesign-build
+
+# === Plugins ===
+plugins:
+  - jekyll-sitemap
+
+# === SASS Settings ===
+sass:
+  sass_dir: _sass
+  style: compressed
+
