@@ -22,7 +22,7 @@ include:
   - ".htaccess"
 
 # === Build settings ===
-destination: ../mdesign-build
+destination: mdesign-build/
 
 # === Plugins ===
 plugins:
