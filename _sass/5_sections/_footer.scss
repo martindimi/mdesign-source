@@ -22,3 +22,17 @@
     margin: 0; // Removing the margin from the first item so it doesn't stack up with the .section padding
   }
 }
+
+// Footer link
+.footer-link {
+
+  a {
+    font-size: 1.2em;
+    line-height: 1.4em;
+
+    // --- Smartphone only ---
+    @include breakpoints(smartphone-only){
+      font-size: 1.4em;
+    }
+  }
+}
