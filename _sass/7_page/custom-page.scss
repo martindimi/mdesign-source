@@ -1,0 +1,38 @@
+// ====================
+// === Custom pages ===
+// ====================
+
+.custom-page-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .custom-page-logo-img {
+    display: block;
+    height: 60px;
+    margin-bottom: 32px;
+
+    // --- Tablet landscape up ---
+    @include breakpoints(tablet-landscape-up) {
+      height: 80px;
+    }
+  }
+}
+
+.custom-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 8px;
+  width: 100%;
+  max-width: 800px;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #ff3232 0%,#ff9328 25%,#33ff30 50%,#28d4ff 75%,#ff89f7 100%);
+
+  // --- Tablet landscape up ---
+  @include breakpoints(tablet-landscape-up) {
+    padding: 64px 0;
+  }
+}
