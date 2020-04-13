@@ -77,6 +77,14 @@ b {
   font-weight: bold;
 }
 
+// Lists 
+ul, ol {
+  margin-bottom: 1.4em;
+  width: max-content;
+  text-align: left;
+  padding-left: 1em;
+}
+
 // Anchors
 a {
 text-decoration: none;

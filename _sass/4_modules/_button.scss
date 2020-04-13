@@ -4,7 +4,7 @@
 
 .button {
   font-size: 1.6em;
-  padding: 0.2em 1.6em;
+  padding: 0.2em .6em;
   text-align: center;
   width: 100%;
   background: $color-prim;
@@ -21,11 +21,7 @@
 
   // --- Tablet portrait and up ---
   @include breakpoints(tablet-portrait-up){
-    max-width: 340px;
-  }
-
-  // --- Tablet landscape and up ---
-  @include breakpoints(tablet-landscape-up){
-    max-width: 260px;
+    padding: 0.2em 1.4em;
+    width: auto;
   }
 }
