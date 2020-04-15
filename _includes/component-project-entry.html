@@ -1,0 +1,24 @@
+<!-- Project entry -->
+<figure class="project-entry">
+
+  <!-- Project entry image -->
+  <picture>
+    <source media="(max-width: 1199px)" srcset="/assets/img/project-img/{{ post.project-id }}/{{ post.project-id }}--project-entry-mobile.jpg">
+    <source media="(min-width: 1200px)" srcset="/assets/img/project-img/{{ post.project-id }}/{{ post.project-id }}--project-entry-desktop.jpg">
+    <img src="" alt="" class="project-entry-img">
+  </picture>
+
+  <!-- Project entry content -->
+  <figcaption class="project-entry-text">
+
+    <h2 class="project-entry-title">{{ post.title }}</h2>
+
+    <!-- Project entry links -->
+    <div class="project-entry-links">
+      <a href="{{ post.project-location }}" target="_blank" class="project-entry-link">Visit it</a>
+      <a href="{{ post.url }}" class="project-entry-link">More about</a>
+      <a href="{{ post.project-source }}" target="_blank" class="project-entry-link">The code</a>
+    </div>
+  </figcaption>
+
+</figure>

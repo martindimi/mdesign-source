@@ -1,0 +1,19 @@
+<!--- My work section -->
+
+<div class="section-wrapper">
+  <section id="my-work" class="my-work-section section">
+    <h1 class="section-title">My Work</h1>
+
+    <div class="project-entries-grid">
+
+      {% for post in site.posts limit:5 %}
+        {% include component-project-entry.html %}
+      {% endfor %}
+
+      <article class="more-projects-entry">
+        <h2><a href="#" class="more-projects-entry-title">See More</a></h2>
+      </article>
+
+    </div>
+  </section>
+</div>
