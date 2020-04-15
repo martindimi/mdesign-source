@@ -1,0 +1,20 @@
+// ============================
+// === Project Entries Grid ===
+// ============================
+
+.project-entries-grid {
+  display: flex;
+  flex-direction: column;
+
+  // --- Tablet portrait and up ---
+  @include breakpoints(tablet-portrait-up){
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  // // --- Desktop and up ---
+  // @include breakpoints(desktop-up){
+  //   display: grid;
+  //   grid-template-columns: repeat(3, 1fr);
+  // }
+}
