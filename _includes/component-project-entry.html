@@ -15,9 +15,17 @@
 
     <!-- Project entry links -->
     <div class="project-entry-links">
-      <a href="{{ post.project-location }}" target="_blank" class="project-entry-link">Visit it</a>
-      <a href="{{ post.url }}" class="project-entry-link">More about</a>
-      <a href="{{ post.project-source }}" target="_blank" class="project-entry-link">The code</a>
+      <a href="{{ post.project-location }}" target="_blank" class="project-entry-link">
+        <i class="fas fa-share-square project-entry-link-icon"></i>Visit it
+      </a>
+
+      <a href="{{ post.url }}" class="project-entry-link">
+        <i class="fas fa-info-circle project-entry-link-icon"></i>More about
+      </a>
+
+      <a href="{{ post.project-source }}" target="_blank" class="project-entry-link">
+        <i class="fas fa-file-code project-entry-link-icon"></i>The code
+      </a>
     </div>
   </figcaption>
 

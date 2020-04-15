@@ -18,3 +18,4 @@ See LICENCE file for more.
 * [DEVICON](https://konpa.github.io/devicon/)
 * [Social Media Icons](https://github.com/martindimi/social-media-icons)
 * [Fira Sans Compressed](https://github.com/bBoxType/FiraSans) font family.
+* [Font Awesome](https://fontawesome.com/)
