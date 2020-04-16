@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<div class="section-wrapper">
+  <article class="section project">
+
+    <section class="project-about">
+
+      <img src="/assets/img/project-img/{{ page.project-id }}/{{ page.project-id }}.jpg" alt="{{ page.title }}" title="{{ page.title }}" class="project-image">
+
+      <h1 class="project-title">{{ page.title }}</h1>
+
+      <div class="project-summary">
+        {{ content }}
+      </div>
+
+      <!-- Project links -->
+      <div class="project-links">
+        {% if post.project-location != "" %}
+        <a href="{{ post.project-location }}" target="_blank" class="project-link">
+          <i class="fas fa-share-square project-link-icon"></i>Visit
+        </a>
+        {% endif %}
+        
+        {% if post.project-source != "" %}
+        <a href="{{ post.project-source }}" target="_blank" class="project-link">
+          <i class="fas fa-file-code project-link-icon"></i>Source
+        </a>
+        {% endif %}
+      </div>
+
+      {% if page.category == "website" %}
+
+      <!-- Tools used in project -->
+      <!-- <div class="project-tools">
+        <h2>Tools</h2>
+
+        <div class="project-tools-icons">
+          
+          <img src="" alt="" title="" class="project-tool-icon">
+            
+        </div>
+      </div> -->
+        
+      <!-- Project Color Palete -->
+      <div class="project-colors">
+        <h2>Color palete</h2>
+
+        {% for color in page.colors %}
+        <div class="project-color-item" style="background-color: {{ color }};"></div>
+        {% endfor %}
+      </div>
+
+      {% endif %}
+
+    </section>
+
+    {% if page.category == "website" %}
+    <!-- Project mockups -->
+    <section class="project-mockups">
+      <h2>Website Mockups</h2>
+
+      <img src="/assets/img/project-img/{{ page.project-id }}/{{ page.project-id }}--project-mockup-smartphone.jpg" alt="{{ page.title }} smartphone mockup" class="project-mockup-image">
+      <img src="/assets/img/project-img/{{ page.project-id }}/{{ page.project-id }}--project-mockup-tablet.jpg" alt="{{ page.title }} tablet mockup" class="project-mockup-image">
+      <img src="/assets/img/project-img/{{ page.project-id }}/{{ page.project-id }}--project-mockup-desktop.jpg" alt="{{ page.title }} desktop mockup" class="project-mockup-image">
+      
+    </section>
+    {% endif %}
+
+    {% if page.category == "graphics" %}
+    <!-- Project Sample Images -->
+    <section class="project-sample-images">
+      <h2>Samples</h2>
+      {% for sample in (1..page.samples) %}
+      <img src="/assets/img/project-img/{{ page.project-id }}/{{ page.project-id }}--sample-image-{{sample}}.jpg" alt="Sample image {{sample}}" class="project-sample-image">
+      {% endfor %}
+    </section>
+    {% endif %}
+
+  </article>
+</div>
