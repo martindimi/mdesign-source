@@ -33,3 +33,11 @@ sass:
   sass_dir: _sass
   style: compressed
 
+# === Defaults ===
+defaults:
+  - 
+    scope:
+      type: "posts"
+    values:
+      layout: project
+      permalink: "/my-work/:title"
