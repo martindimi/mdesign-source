@@ -1,7 +1,7 @@
 ---
 title: "Your message was sent successfully"
 permalink: /contact/success.html
-layout: custom-page
+layout: error-page
 sitemap: false
 ---
 
