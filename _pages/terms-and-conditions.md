@@ -1,5 +1,6 @@
 ---
 title: Terms and Conditions
+description: Terms and Conditions
 permalink: /terms-and-conditions.html
 layout: page
 ---

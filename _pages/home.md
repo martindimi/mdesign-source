@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Welcome to my portfolio
+title: Welcome to </MDesign>
 permalink: /index.html
 ---
 

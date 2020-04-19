@@ -1,5 +1,6 @@
 ---
 title: Privacy Policy
+description: Privacy Policy
 permalink: /privacy-policy.html
 layout: page
 ---
