@@ -6,6 +6,6 @@ layout: error-page
 sitemap: false
 ---
 
-# Thank you
+## Thank you
 
 Your message was sent successfully

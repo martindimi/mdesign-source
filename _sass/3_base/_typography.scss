@@ -39,25 +39,25 @@
 }
 
 // Headings
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-family: "Fira Sans Compressed Regular";
   font-weight: bold;
   line-height: 1em;
 }
 
-h1 {
+h2 {
   font-size: 2.1rem;
   color: #ffffff;
   margin-bottom: 0.3em;
 }
 
-h2 {
+h3 {
   font-size: 1.4rem;
   color: $color-prim;
   margin-bottom: 0.3em;
 }
 
-h3, h4, h5, h6 {
+h4, h5, h6 {
   font-size: 1.2rem;
   color: $color-light-gray;
   margin-bottom: 0.3em;
