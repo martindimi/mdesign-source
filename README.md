@@ -18,5 +18,4 @@ See LICENCE file for more.
 * [DEVICON](https://konpa.github.io/devicon/)
 * [Social Media Icons](https://github.com/martindimi/social-media-icons)
 * [Fira Sans Compressed](https://github.com/bBoxType/FiraSans) font family.
-* [Font Awesome](https://fontawesome.com/)
 * About me section background image by [Negative Space](https://negativespace.co/) - [Source](https://www.pexels.com/photo/grayscale-photo-of-computer-laptop-near-white-notebook-and-ceramic-mug-on-table-169573/)
