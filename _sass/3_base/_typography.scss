@@ -26,7 +26,6 @@
   font-family: "Fira Sans Compressed Light";
   
   color: $color-sec;
-  text-align: center;
   
   // --- Tablet and up ---
   @include breakpoints(tablet-portrait-up){
@@ -35,7 +34,7 @@
 
   // --- Desktop and up ---
   @include breakpoints(desktop-up){
-    font-size: 26px;
+    font-size: 25px;
   }
 }
 
@@ -80,9 +79,15 @@ b {
 // Lists 
 ul, ol {
   margin-bottom: 1.4em;
-  width: max-content;
+  //width: max-content;
   text-align: left;
   padding-left: 1em;
+
+}
+
+li {
+  width: 100%;
+  margin-bottom: .2em;
 }
 
 // Anchors

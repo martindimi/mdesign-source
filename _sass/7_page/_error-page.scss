@@ -2,13 +2,13 @@
 // === Custom pages ===
 // ====================
 
-.custom-page-section {
+.error-page-section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
-  .custom-page-logo-img {
+  .error-page-logo-img {
     display: block;
     height: 60px;
     margin-bottom: 32px;
@@ -20,7 +20,7 @@
   }
 }
 
-.custom-page-content {
+.error-page-content {
   display: flex;
   flex-direction: column;
   align-items: center;
