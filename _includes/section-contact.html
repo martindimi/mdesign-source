@@ -23,9 +23,14 @@
     </div>
 
     <form class="contact-form" name="Contact Form" data-netlify="true" action="/contact/success.html" method="post">
-      <input type="text" name="name" placeholder="What's your name?">
-      <input type="email" name="email" placeholder="Your e-mail?">
-      <textarea name="message" rows="8" placeholder="Tell me about your project..."></textarea>
+      <input type="text" name="name" required placeholder="What's your name?">
+      <input type="email" name="email" required placeholder="Your e-mail?">
+      <textarea name="message" rows="8" required placeholder="Tell me about your project..."></textarea>
+      <label class="checkbox-label">
+        <input type="checkbox" required>
+        <span class="checkbox"></span>
+        I agree with the <a href="/privacy-policy.html" target="_blank">Privacy Policy</a> &amp; <a href="/terms-and-conditions.html" target="_blank">Terms and Conditions</a>
+      </label>
       <input type="submit" value="Send" class="button">
     </form>
 

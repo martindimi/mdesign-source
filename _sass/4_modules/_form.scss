@@ -2,7 +2,10 @@
 // === Form ===
 // ============
 
-input, textarea, button {
+input[type="text"],
+input[type="email"], 
+textarea, 
+button {
   font-family: "Fira Sans Compressed Light";
   display: block;
   width: 100%;
@@ -10,7 +13,9 @@ input, textarea, button {
   margin-bottom: 16px;
 }
 
-input, textarea {
+input[type="text"],
+input[type="email"], 
+textarea {
   font-size: 1.3em;
   color: $color-sec;
   background-color: $color-dark;
@@ -29,3 +34,60 @@ textarea {
   // Disabling the horizontal resizing so the layout can't be messed up
   resize: vertical;
   }
+
+
+// Checkbox
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.checkbox {
+
+  // Custom checkbox label
+  &-label {
+    position: relative; // The custom checkbox will be positioned relative to the parent label
+    user-select: none;
+    cursor: pointer;
+    padding-left: 1.3em;
+    margin-bottom: 16px;
+  }
+
+  // Change custom checkbox background color on hover or checked state 
+  &-label:hover input ~ .checkbox,
+  &-label input:checked ~ .checkbox {
+    background-color: $color-prim;
+  }
+
+  // Show checkmark when the checkbox is checked
+  &-label input:checked ~ .checkbox:after {
+    display: block;
+  }
+
+  // Custom checkbox
+  position: absolute;
+  top: .13em;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  background-color: $color-sec;
+  cursor: pointer;
+
+  // Custom checkmark
+  &:after {
+    position: absolute;
+    top: .1em;
+    left: .275em;
+    content: "";
+    display: none;
+    width: 45%;
+    height: 65%;
+    border-style: solid;
+    border-color: $color-sec;
+    border-width: 0 3px 3px 0;
+    transform: rotate(42deg);
+  }
+}
