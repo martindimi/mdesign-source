@@ -13,7 +13,7 @@ layout: page
 
 These terms and conditions outline the rules and regulations for the use of MartinDimitrov.dev.
 
-By accessing this website we assume you accept these terms and conditions. Do not continue to use MDesign if you do not agree to take all of the terms and conditions stated on this page. 
+By accessing this website we assume you accept these terms and conditions. Do not continue to use MartinDimitrov.dev if you do not agree to take all of the terms and conditions stated on this page. 
 
 ### License
 
