@@ -1,0 +1,190 @@
+// ====================
+// === Project Page ===
+// ====================
+
+.project {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 16px;
+
+  // --- Tablet landscape and up ---
+  @include breakpoints(tablet-landscape-up) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 32px;
+  }
+  
+  &-website {
+    grid-template-areas: 
+      "image"
+      "about"
+      "colors"
+      "tools"
+      "mockups"
+    ;
+
+    // --- Tablet landscape and up ---
+    @include breakpoints(tablet-landscape-up) {
+      grid-template-areas: 
+        "about image"
+        "tools colors"
+        "mockups mockups"
+      ;
+    }
+  }
+
+  &-graphics {
+    grid-template-areas: 
+      "image"
+      "about"
+      "gallery"
+    ;
+
+    // --- Tablet landscape and up ---
+    @include breakpoints(tablet-landscape-up) {
+      grid-template-areas: 
+        "about image"
+        "gallery gallery"
+      ;
+    }
+  }
+
+  &-image {
+    grid-area: image;
+    width: 100%;
+  }
+
+  &-about {
+    grid-area: about;
+  }
+
+  &-title {
+    text-align: center;
+
+    // --- Tablet landscape and up ---
+    @include breakpoints(tablet-landscape-up) {
+      text-align: left;
+    }
+  }
+
+  &-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: .3em;
+
+    // --- Tablet portrait and up ---
+    @include breakpoints(tablet-portrait-up) {
+      margin-bottom: .6em;
+    }
+
+    // --- Tablet landscape and up ---
+    @include breakpoints(tablet-landscape-up) {
+      justify-content: flex-start;
+    }
+  }
+
+  &-link {
+    // --- Tablet landscape and up ---
+    @include breakpoints(tablet-landscape-up) {
+      margin-right: 1em;
+    }
+
+    .project-link-icon {
+      margin-right: .3em;
+    }
+  }
+
+  &-summary {
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-tools {
+    grid-area: tools;
+
+    &-icons {
+      display: grid;
+      grid-template-columns: repeat(5, 50px);
+      grid-gap: 8px;
+    }
+  }
+
+  &-tool-icon {
+    width: 50px;
+    height: 50px;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  &-colors {
+    grid-area: colors;
+
+    &-container{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-color-item {
+    width: 50px;
+    height: 50px;
+  }
+
+  &-mockups {
+    grid-area: mockups;
+  }
+
+  &-gallery {
+    grid-area: gallery;
+  }
+
+  &-mockups-grid, &-gallery-grid {
+    display: flex;
+    flex-direction: column;
+
+    // --- Tablet portrait and up ---
+    @include breakpoints(tablet-portrait-up) {
+      display: grid;
+      grid-gap: 16px;
+      grid-template-columns: 50% 50%;
+    }
+  }
+
+  &-mockups-grid {
+    // --- Desktop and up ---
+    @include breakpoints(desktop-up) {
+      grid-template-columns: 20% 30% 50%;
+    }
+  }
+
+  &-mockup-image, &-gallery-image {
+    width: 100%;
+
+    // --- Smartphone only ---
+    @include breakpoints(smartphone-only) {
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-mockups picture:last-child {
+    // --- Tablet portrait and up ---
+    @include breakpoints(tablet-portrait-up) {
+      grid-column: 1 / 4;
+    }
+    
+    // --- Desktop and up ---
+    @include breakpoints(desktop-up) {
+      grid-column: auto;
+    } 
+  }
+}

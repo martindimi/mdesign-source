@@ -1,0 +1,35 @@
+git:
+  display-name: "Git"
+  image: "/assets/img/devicon/git.svg"
+
+html5:
+  display-name: "HTML5"
+  image: "/assets/img/devicon/html5.svg"
+
+css3:
+  display-name: "CSS3"
+  image: "/assets/img/devicon/css3.svg"
+
+sass:
+  display-name: "SASS" 
+  image: "/assets/img/devicon/sass.svg"
+
+js:
+  display-name: "JavaScript"
+  image: "/assets/img/devicon/javascript.svg"
+
+jquery:
+  display-name: "JQuery"
+  image: "/assets/img/devicon/jquery.svg"
+
+atom:
+  display-name: "Atom"
+  image: "/assets/img/devicon/atom.svg"
+
+photoshop:
+  display-name: "Photoshop" 
+  image: "/assets/img/devicon/photoshop.svg"
+
+illustrator:
+  display-name: "Illustrator" 
+  image: "/assets/img/devicon/illustrator.svg"
