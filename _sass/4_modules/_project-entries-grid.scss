@@ -11,10 +11,4 @@
     display: grid;
     grid-template-columns: 50% 50%;
   }
-
-  // // --- Desktop and up ---
-  // @include breakpoints(desktop-up){
-  //   display: grid;
-  //   grid-template-columns: repeat(3, 1fr);
-  // }
 }
