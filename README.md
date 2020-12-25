@@ -8,7 +8,7 @@ See LICENCE file for more.
 
 ## Tools Used
 
-* [Visual Studio Code](https://code.visualstudio.com/) Text Editor.
+* [VS Codium](https://vscodium.com/) Text Editor.
 * Build with [Jekyll](https://jekyllrb.com/).
 
 ## External assets and libs
