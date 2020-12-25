@@ -43,9 +43,19 @@ input[type="checkbox"] {
   opacity: 0;
   height: 0;
   width: 0;
+  top: 0;
+  left: 0;
 }
 
 .checkbox {
+  // Custom checkbox
+  position: absolute;
+  top: .13em;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  background-color: $color-sec;
+  cursor: pointer;
 
   // Custom checkbox label
   &-label {
@@ -66,15 +76,6 @@ input[type="checkbox"] {
   &-label input:checked ~ .checkbox:after {
     display: block;
   }
-
-  // Custom checkbox
-  position: absolute;
-  top: .13em;
-  left: 0;
-  width: 1em;
-  height: 1em;
-  background-color: $color-sec;
-  cursor: pointer;
 
   // Custom checkmark
   &:after {
