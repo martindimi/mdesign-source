@@ -7,7 +7,7 @@ layout: page
 
 ## Privacy Policy
 
-**Last Update: April 16 2020**
+**Last Update: December 29 2020**
 
 ### Welcome to MartinDimitrov.dev
 
@@ -57,6 +57,9 @@ MDesign's Privacy Policy does not apply to other websites or services. Thus, we 
 #### Netlify
 
 Netlify is a cloud computing company that offers hosting and serverless backend services for static websites. It features continuous deployment from Git across a global application delivery network, serverless form handling, support for AWS Lambda functions, and full integration with Let’s Encrypt. Read [Netlify’s Privacy Policy](https://www.netlify.com/privacy/).
+
+### Yandex Metrica
+Yandex.Metrica is a free web analytics service offered by Yandex that tracks and reports website traffic. [Yandex's Privacy Policy](https://yandex.com/legal/confidential/?lang=en).
 
 ### CCPA Privacy Rights (Do Not Sell My Personal Information)
 

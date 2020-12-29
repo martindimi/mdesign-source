@@ -7,7 +7,7 @@ layout: page
 
 ## Terms and Conditions
 
-**Effective: April 16 2020**
+**Last Update: April 16 2020**
 
 ### Welcome to MartinDimitrov.dev
 
