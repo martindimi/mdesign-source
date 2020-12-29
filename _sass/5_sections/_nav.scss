@@ -7,11 +7,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 80%;
+  max-width: 300px;
 
   // --- Tablet portrait and up ---
   @include breakpoints(tablet-portrait-up) {
     flex-direction: row;
     width: 600px;
+    max-width: 100%;
 
     .button {display: none; } // Hiding the "Let's talk" button at 600px and above
   }
