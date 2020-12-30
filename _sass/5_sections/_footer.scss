@@ -27,12 +27,7 @@
 .footer-link {
 
   a {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.4em;
-
-    // --- Smartphone only ---
-    @include breakpoints(smartphone-only){
-      font-size: 1.4em;
-    }
   }
 }
