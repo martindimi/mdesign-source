@@ -9,6 +9,7 @@
   src: url('/assets/fonts/FiraSansCompressed-Light.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -16,6 +17,7 @@
   src: url('/assets/fonts/FiraSansCompressed-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
 }
 
 // --- Global Typography Styles ---
@@ -24,8 +26,8 @@
 :root, body {
   font-size: 20px;
   font-family: "Fira Sans Compressed Light", sans-serif;
-  
   color: $color-sec;
+  
   
   // --- Tablet and up ---
   @include breakpoints(tablet-portrait-up){
