@@ -12,6 +12,7 @@
   margin: 0 16px; // Adding margin between the links wrappers
   list-style: none;
   text-align: left;
+  padding: 0; // Remove the default ul padding
 
   // --- Tablet portrait and up ---
   @include breakpoints(tablet-portrait-up) {
