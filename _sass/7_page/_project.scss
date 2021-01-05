@@ -52,6 +52,13 @@
   &-image {
     grid-area: image;
     width: 100%;
+    display: block;
+     
+    // --- Tablet landscape and up ---
+    @include breakpoints(tablet-portrait-only) {
+      max-width: 560px;
+      margin: 0 auto;
+    }
   }
 
   &-about {
