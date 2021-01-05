@@ -8,9 +8,9 @@ layout: default
     <!-- Project Image -->
     <picture>
       <source media="(max-width: 1199px)"
-        srcset="/assets/img/project-img/{{ page.project-id }}/{{ page.project-id }}--project-page--mobile.jpg">
+        srcset="/assets/img/project-img/{{ page.project-id }}/{{ page.project-id }}--project-page--mobile.webp">
       <source media="(min-width: 1200px)"
-        srcset="/assets/img/project-img/{{ page.project-id }}/{{ page.project-id }}--project-page--desktop.jpg">
+        srcset="/assets/img/project-img/{{ page.project-id }}/{{ page.project-id }}--project-page--desktop.webp">
       <img src="" alt="{{ post.title }} image" class="project-image">
     </picture>
 
@@ -76,7 +76,7 @@ layout: default
 
       <div class="project-gallery-grid">
       {% for count in (1..page.project-gallery-images) %}
-        <img src="/assets/img/project-img/{{page.project-id}}/{{page.project-id}}--gallery-{{count}}.jpg" 
+        <img src="/assets/img/project-img/{{page.project-id}}/{{page.project-id}}--gallery-{{count}}.webp" 
         alt="{{page.title}} {{count}}" 
         class="project-gallery-image">
       {% endfor %}

@@ -7,7 +7,7 @@
   
   // Tablet Portrat up
   @include breakpoints(tablet-portrait-up) {
-    background-image: url(/assets/img/about-me-bg--tablet-portrait.jpg);
+    background-image: url(/assets/img/about-me-bg--tablet-portrait.webp);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
@@ -17,12 +17,12 @@
 
   // Tablet landscape up
   @include breakpoints(tablet-landscape-up) {
-    background-image: url(/assets/img/about-me-bg--tablet-landscape.jpg);
+    background-image: url(/assets/img/about-me-bg--tablet-landscape.webp);
   }
 
   // --- Desktop up ---
   @include breakpoints(desktop-up) {
-    background-image: url(/assets/img/about-me-bg--desktop.jpg);
+    background-image: url(/assets/img/about-me-bg--desktop.webp);
   }
 }
 
