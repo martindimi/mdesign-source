@@ -9,7 +9,7 @@
                              __/ |      
                             |___/     
 
-martindimitrov.dev
+M-Design.dev
 
 Designer:     Martin Dimitrov ({{ site.email }})
 Location:     Greece
@@ -17,4 +17,4 @@ Location:     Greece
 Last updated: {{ site.time }}
 Language:     English
 Built with:   Jekyll {{ jekyll.version }} <https://jekyllrb.com>
-              Visual Studio Code <https://code.visualstudio.com>
+              VSCodium <https://vscodium.com/>
