@@ -5,6 +5,12 @@
 .project-entry {
   position: relative;
   min-height: 200px;
+  overflow: hidden;
+
+  // Project entry hover state
+  &:hover &-text {
+    bottom: 0;
+  }
 
   // Entry image
   &-img {
@@ -31,6 +37,14 @@
     @include breakpoints(tablet-landscape-up) {
       padding: 32px;
     }
+
+    // --- Desktop and up ---
+    @include breakpoints(desktop-up) {
+      background-color: rgba(0,0,0, 1);
+      top: auto;
+      bottom: -180px;
+      transition: 0.3s ease;
+    }
   }
   
   // Entry title
@@ -38,7 +52,13 @@
     color: $color-sec;
     padding: 0 0.1em 0.2em 0.1em;
     border-bottom: 1px solid $color-sec;
+
+    // --- Tablet portrait and up ---
+    @include breakpoints (tablet-portrait-up){
+      font-size: 1.3em;
+    }
     
+    // --- Tablet landscape and up ---
     @include breakpoints(tablet-landscape-up) {
       font-size: 1.6em;
     }
@@ -60,6 +80,16 @@
   &-link {
     font-size: 1.3em;
     display: block;
+
+    // --- Tablet portrait and up ---
+    @include breakpoints (tablet-portrait-up){
+      font-size: 1.1em;
+    }
+
+    // --- Tablet landscape and up ---
+    @include breakpoints(tablet-landscape-up) {
+      font-size: 1.3em;
+    }
 
     @media screen and (min-width: 1100px) {
       width: 50%;
