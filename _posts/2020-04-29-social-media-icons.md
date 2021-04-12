@@ -13,7 +13,7 @@ project-location: ""
 project-source: "https://github.com/martindimi/social-media-icons"
 
 # === Gallery Images ===
-project-gallery-images: 12
+project-gallery-images: 4
 ---
 
 I started this icon pack as a project to strengthen my abilities and and learn more about Adobe Illustrator and graphics design in general. This pack bundles icons of 24 web services.
