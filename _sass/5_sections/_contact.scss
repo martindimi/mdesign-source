@@ -46,7 +46,7 @@
   color: $color-light-gray;
   text-align: center;
 
-  // --- Tablet portrait only ---
+  // --- Tablet portrait up ---
   @include breakpoints(tablet-portrait-up){
     font-size: 1.6em;
   }
@@ -58,7 +58,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 16px 0;
+  margin: 16px auto;
+
+
+  // --- Smartphone only ---
+  @include breakpoints(smartphone-only){
+    max-width: 320px;
+  }
+
+  // --- Tablet portrait up ---
+  @include breakpoints(tablet-portrait-up){
+    max-width: 420px;
+  }
 }
 
 // Online service item
