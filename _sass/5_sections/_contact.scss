@@ -87,4 +87,12 @@
       height: 80px;
     }
   }
+
+  @include breakpoints (desktop-up){
+    transition: 0.15s ease;
+
+    &:hover {
+      scale: 1.2;
+    }
+  }
 }
